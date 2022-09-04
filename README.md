@@ -6,7 +6,8 @@
 ![Screenshot](./assets/images/Website-Preview.png)
 
 ## Directory:
-* [Link](https://ahmed-sajjad111.github.io/profile-editor/)
+<!-- Disabled until SPA workaround is found
+* [Link](https://ahmed-sajjad111.github.io/profile-editor/) -->
 * [Usage](#usage)
 * [Features](#features)
 * [Technologies](#technologies-and-frameworks)
@@ -15,7 +16,8 @@
 A simple front-end profile editor that retains the information the user inputs until page restart/refresh. 
 
 ## Usage:
-To use the site on the deployed site click on the link in the [Link](#heroku-link) section
+<!-- Disabled until SPA workaround is found
+To use the site on the deployed site click on the link in the [Link](#heroku-link) section -->
 
 To run the site locally, clone and run `npm install` followed by `npm run start`
 
