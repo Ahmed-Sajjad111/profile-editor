@@ -23,7 +23,9 @@ export default function Profile() {
             </div>
             <div className='profileImageContainer'>
                 <div>
-                    <img className='profileImage' src={GlobalState.profileImage} alt="userImage" />
+                    <Link to="/editProfile" state={"profileImage"}>
+                        <img className='profileImage' src={GlobalState.profileImage} alt="userImage" />
+                    </Link>
                 </div>
                 <span className='editimage'>
                     <Link
@@ -48,51 +50,55 @@ export default function Profile() {
             </div>
             <div className='infoBox'>
                 <p>Name</p>
-                <div className='userInfo'>
-                    <p>{`${GlobalState.firstName} ${GlobalState.lastName}`}</p>
-                    <Link
-                        to="/editProfile"
-                        state={"name"}
-                    >
+                <Link
+                    to="/editProfile"
+                    state={"name"}
+                    style={{ textDecoration: 'none' }}
+                >
+                    <div className='userInfo'>
+                        <p>{`${GlobalState.firstName} ${GlobalState.lastName}`}</p>
                         <img src={rightArrow} alt="Submit" width="18" height="18" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
             <div className='infoBox'>
                 <p>Phone</p>
-                <div className='userInfo'>
-                    <p>{GlobalState.phone}</p>
-                    <Link
-                        to="/editProfile"
-                        state={"phone"}
-                    >
+                <Link
+                    to="/editProfile"
+                    state={"phone"}
+                    style={{ textDecoration: 'none' }}
+                >
+                    <div className='userInfo'>
+                        <p>{GlobalState.phone}</p>
                         <img src={rightArrow} alt="Submit" width="18" height="18" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
             <div className='infoBox'>
                 <p>Email</p>
-                <div className='userInfo'>
-                    <p>{GlobalState.email}</p>
-                    <Link
-                        to="/editProfile"
-                        state={"email"}
-                    >
+                <Link
+                    to="/editProfile"
+                    state={"email"}
+                    style={{ textDecoration: 'none' }}
+                >
+                    <div className='userInfo'>
+                        <p>{GlobalState.email}</p>
                         <img src={rightArrow} alt="Submit" width="18" height="18" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
             <div className='infoBox'>
                 <p>Tell Us about yourself</p>
-                <div className='userInfo'>
-                    <p>{GlobalState.description}</p>
-                    <Link
-                        to="/editProfile"
-                        state={"description"}
-                    >
+                <Link
+                    to="/editProfile"
+                    state={"description"}
+                    style={{ textDecoration: 'none' }}
+                >
+                    <div className='userInfo'>
+                        <p>{GlobalState.description}</p>
                         <img src={rightArrow} alt="Submit" width="18" height="18" />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
         </div >
     )
