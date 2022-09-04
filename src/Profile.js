@@ -1,6 +1,7 @@
 import React from 'react'
 import pen from './icons/pen.png'
 import rightArrow from './icons/rightchevron.png'
+import { Link } from 'react-router-dom'
 
 
 import { UseGlobalState } from './store/contextStore'
@@ -8,7 +9,7 @@ import { UseGlobalState } from './store/contextStore'
 export default function Profile() {
 
 
-
+    //import globalstate function to be used, access variables, and actions
     const GlobalState = UseGlobalState()
 
     return (
@@ -19,36 +20,45 @@ export default function Profile() {
                     <img className='profileImage' src={GlobalState.profileImage} alt="userImage" />
                 </div>
                 <span className='editimage'>
-                    <img src={pen} alt="Submit" width="30" height="30" onClick={() => alert('hello')} />
+                    <Link to="/editProfile">
+                        <img src={pen} alt="Submit" width="30" height="30" />
+                    </Link>
                 </span>
             </div>
-
             <div className='infoBox'>
                 <p>Name</p>
                 <div className='userInfo'>
                     <p>{GlobalState.name}</p>
-                    <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    <Link to="/editProfile">
+                        <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    </Link>
                 </div>
             </div>
             <div className='infoBox'>
                 <p>Phone</p>
                 <div className='userInfo'>
                     <p>{GlobalState.phone}</p>
-                    <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    <Link to="/editProfile">
+                        <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    </Link>
                 </div>
             </div>
             <div className='infoBox'>
                 <p>Email</p>
                 <div className='userInfo'>
                     <p>{GlobalState.email}</p>
-                    <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    <Link to="/editProfile">
+                        <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    </Link>
                 </div>
             </div>
             <div className='infoBox'>
                 <p>Tell Us about yourself</p>
                 <div className='userInfo'>
                     <p>{GlobalState.description}</p>
-                    <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    <Link to="/editProfile">
+                        <img src={rightArrow} alt="Submit" width="18" height="18" />
+                    </Link>
                 </div>
             </div>
         </div>
