@@ -114,10 +114,10 @@
 
 @media screen and (max-width: 992px) {
   .infoBox {
-    width: 80%;
+    width: 300px;
   }
 
   .editInputBox {
-    width: 80%;
+    width: 300px;
   }
 }
