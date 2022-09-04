@@ -56,11 +56,68 @@
   left: 95px;
 }
 
+.editInputBox {
+  width: 400px;
+  text-align: left;
+  margin-bottom: 100px;
+
+}
+
+.editInputBox p {
+  font-weight: bold;
+}
+
+.userEditinput {
+  display: flex;
+  justify-content: space-between;
+}
 
 
+.userEditinput input {
+  width: 100%;
+  margin: 5px;
+  height: 30px;
+  padding: 0px 5px;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+
+.editProfileUpdate {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+
+.previewProfilePic {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.playerProfilePic_home_tile {
+  width: 150px;
+  height: 150px;
+  /* border: 2px solid black; */
+  margin: auto;
+}
+
+.register_profile_image {
+  margin: auto;
+  width: 150px;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 992px) {
   .infoBox {
+    width: 80%;
+  }
+
+  .editInputBox {
     width: 80%;
   }
 }
