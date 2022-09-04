@@ -18,13 +18,27 @@ export default function Profile() {
 
     return (
         <div>
-
+            <div style={{ margin: '30px 0px', color: '#486de7' }}>
+                <h2>Edit Profile</h2>
+            </div>
             <div className='profileImageContainer'>
                 <div>
                     <img className='profileImage' src={GlobalState.profileImage} alt="userImage" />
                 </div>
                 <span className='editimage'>
                     <Link
+                        style={
+                            {
+                                textAlign: 'center',
+                                backgroundColor: "white",
+                                width: "50px",
+                                height: '50px',
+                                borderRadius: '100%',
+                                paddingLeft: '7px',
+                                paddingTop: '18px',
+                                paddingRight: '7px',
+                                paddingBottom: '7px',
+                            }}
                         to="/editProfile"
                         state={"profileImage"}
                     >
@@ -80,6 +94,6 @@ export default function Profile() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
