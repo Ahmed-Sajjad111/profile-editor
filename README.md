@@ -3,7 +3,7 @@
 # Edit Profile Application
 
 ## Application Preview
-![Screenshot](./assets/images/Website-Preview.png)
+![Screenshot](./assets/images/Website-Preview.gif)
 
 ## Directory:
 <!-- Disabled until SPA workaround is found
