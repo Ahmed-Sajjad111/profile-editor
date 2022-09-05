@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { UseGlobalStateUpdate, UseGlobalState } from './store/contextStore'
 
 export default function EditProfile() {
@@ -69,7 +69,6 @@ export default function EditProfile() {
 
     return (
         <div>
-
             <form onSubmit={updateuserdata}>
 
                 {state === "profileImage" &&
@@ -138,6 +137,9 @@ export default function EditProfile() {
                 <button className='editProfileUpdate' type='submit'>
                     Update
                 </button>
+                <Link to='/'>
+                    <button className='cancelProfileUpdate'>Back</button>
+                </Link>
             </form>
         </div >
     )
