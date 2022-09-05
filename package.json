@@ -1,6 +1,5 @@
 {
   "name": "profile-editor",
-  "homepage": "https://ahmed-sajjad111.github.io/profile-editor/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
